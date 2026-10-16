@@ -1,0 +1,30 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Markdown Previewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <h1>Markdown Previewer</h1>
+
+    <input id="title" placeholder="Document title">
+
+    <button onclick="newDocument()">New</button>
+    <button onclick="saveDocument()">Save</button>
+    <button onclick="deleteDocument()">Delete</button>
+
+    <h2>Editor</h2>
+    <textarea id="editor" rows="10" cols="40"></textarea>
+
+    <h2>Preview</h2>
+    <div id="preview"></div>
+
+    <h2>Saved Documents</h2>
+    <ul id="documents"></ul>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
